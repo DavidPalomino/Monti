@@ -1,7 +1,7 @@
 import "./styles/App.css"
 import { Header } from "./components/Header/Header"
 import { Overview } from "./layouts/Overview/Overview"
-import { BenefitsCards } from "./layouts/BenefitsCards/benefitsCards"
+import { BenefitsSection } from "./layouts/BenefitsSection/BenefitsSection"
 import { SharedExpenseSteps } from "./layouts/SharedExpenseSteps/SharedExpenseSteps"
 import { HeroSection } from "./layouts/HeroSection/HeroSection"
 
@@ -11,11 +11,11 @@ function App() {
     <>
       <Header />
       <Overview />
-      <BenefitsCards />
+      <BenefitsSection />
       <SharedExpenseSteps />
       <HeroSection/>
     </>
   )
 }
-
+// BenefitsCards genera una incompatibilidad con el deploy en Vercel
 export default App

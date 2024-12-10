@@ -1,6 +1,6 @@
-import styles from './BenefitsCards.module.css'
-
-export const BenefitsCards = () => {
+import styles from './BenefitsSection.module.css'
+    
+export const BenefitsSection = () => {
   return (
     <div>
         <ul className={styles.benefitsCards}>
