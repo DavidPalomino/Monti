@@ -7,9 +7,10 @@
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #0059FF;
+  
 }
 
 .registrate {
@@ -20,7 +21,6 @@
 }
 
 .regGratis {
-  font-weight: bold;
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
 }

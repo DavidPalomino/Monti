@@ -1,0 +1,31 @@
+.benefitsCards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+  padding-left: 0px;
+}   
+
+.benefitsCards__card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  border: 1px solid #E7E7E7;
+  padding: 10px 40px 10px 20px;
+  border-radius: 30px;
+}
+
+.benefitsCards__card__title {
+  font-size: 26px;
+  font-weight: 350;
+  color: #0059FF;
+  padding-bottom: 45px;
+}
+
+.benefitsCards__card__description {
+  font-size: 16px;
+  font-weight: 150;
+  color: #4F4F4F;
+}

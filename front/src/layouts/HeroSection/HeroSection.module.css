@@ -1,0 +1,50 @@
+.heroSection {
+    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.heroSectionImage {
+  width: 98%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.heroSectionContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-140%, 40%);
+  text-align: left;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 30px;   
+}
+
+.heroSectionTitle {
+  font-size: 26px;
+  padding-left: 23px;
+  padding-right: 50px;
+}
+
+.heroSectionDescription {
+     font-size: 15px;
+     font-weight: 150;
+  padding-left: 23px;
+  padding-right: 50px;
+}
+
+.heroSectionButton {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+  padding: 15px 20px;
+  border: none;
+  margin-left: 23px;
+  margin-right: 50px;
+  margin-bottom: 23px;
+}
