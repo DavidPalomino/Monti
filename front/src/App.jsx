@@ -5,6 +5,9 @@ import { BenefitsSection } from "./layouts/BenefitsSection/BenefitsSection"
 import { SharedExpenseSteps } from "./layouts/SharedExpenseSteps/SharedExpenseSteps"
 import { HeroSection } from "./layouts/HeroSection/HeroSection"
 import { QA } from "./layouts/QA/QA"
+import { Experiences } from "./layouts/Experiences/Experiences"
+import { GroupExpensesHero } from "./layouts/GroupExpensesHero/GroupExpensesHero"
+
 function App() {
 
   return (
@@ -15,6 +18,8 @@ function App() {
       <SharedExpenseSteps />
       <HeroSection/>
       <QA />
+      <Experiences />
+      <GroupExpensesHero/>
     </>
   )
 }
