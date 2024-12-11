@@ -21,7 +21,7 @@
     rgba(0, 0, 0, 1) 40%,
     rgba(0, 0, 0, 1) 100%
   );
-  transform: scale(1.2) translateY(-20%);
+  transform: scale(1.2) translateY(-15%);
 }
 
 .groupExpensesHero__title {

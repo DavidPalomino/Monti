@@ -7,6 +7,7 @@ import { HeroSection } from "./layouts/HeroSection/HeroSection"
 import { QA } from "./layouts/QA/QA"
 import { Experiences } from "./layouts/Experiences/Experiences"
 import { GroupExpensesHero } from "./layouts/GroupExpensesHero/GroupExpensesHero"
+import { Footer } from "./components/Footer/Footer"
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <QA />
       <Experiences />
       <GroupExpensesHero/>
+      <Footer />
     </>
   )
 }
