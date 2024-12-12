@@ -12,7 +12,7 @@ import { Footer } from "./components/Footer/Footer"
 function App() {
 
   return (
-    <>
+    <div className="App">
       <Header />
       <Overview />
       <BenefitsSection />
@@ -22,8 +22,8 @@ function App() {
       <Experiences />
       <GroupExpensesHero/>
       <Footer />
-    </>
+    </div>
   )
 }
-// BenefitsCards genera una incompatibilidad con el deploy en Vercel
+
 export default App
