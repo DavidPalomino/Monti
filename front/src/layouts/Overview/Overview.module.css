@@ -3,7 +3,9 @@
   align-items: center;
   height: 100vh;
   justify-content: space-around;
-  height: 80%;
+  height: 100%;
+  gap: 10rem;
+  padding: 0 5rem;
 }
 
 .overviewText {
@@ -12,8 +14,8 @@
   align-items: left;
 }
 
-h1 {
-  font-size: 52px;
+.overviewTitle {
+  font-size: 4.5rem;
 }
 
 .montiP , .overviewP {

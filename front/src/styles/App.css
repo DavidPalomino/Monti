@@ -6,7 +6,8 @@ body {
   padding: 0;
 }
 
-.App {
-  display: flex;
-  flex-direction: column;
-}
+.App__container {
+  display: grid;
+  grid-template-columns: 1fr;  
+} 
+

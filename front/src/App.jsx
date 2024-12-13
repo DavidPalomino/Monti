@@ -12,17 +12,17 @@ import { Footer } from "./components/Footer/Footer"
 function App() {
 
   return (
-    <div className="App">
-      <Header />
-      <Overview />
-      <BenefitsSection />
-      <SharedExpenseSteps />
-      <HeroSection/>
-      <QA />
-      <Experiences />
-      <GroupExpensesHero/>
-      <Footer />
-    </div>
+    <section className="App__container">
+      <Header className="header"/>
+      <Overview className="overview"/>
+      <BenefitsSection className="benefits-section"/>
+      <SharedExpenseSteps className="shared-expense-steps"/>
+      <HeroSection className="hero-section"/>
+      <QA className="qa"/>
+      <Experiences className="experiences"/>
+      <GroupExpensesHero className="group-expenses-hero"/>
+      <Footer className="footer"/>
+    </section>
   )
 }
 

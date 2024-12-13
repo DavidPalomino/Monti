@@ -5,7 +5,7 @@ export const Overview = () => {
   return (
     <div className={styles.overview}>
       <div className={styles.overviewText}>
-      <h1>Divide tus gastos <br /> compartidos de <br /> manera inteligente.</h1>
+      <h1 className={styles.overviewTitle}>Divide tus gastos <br /> compartidos de <br /> manera inteligente.</h1>
       <p className={styles.overviewP}>Vive tranquilo y manten todo bajo control con <span className={styles.montiP}>Monti.</span></p>
       <div className={styles.iconsContainer}>
       <button className={styles.descargaButton}>Descarga gratis</button>

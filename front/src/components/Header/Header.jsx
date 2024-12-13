@@ -6,9 +6,9 @@ export const Header = () => {
     <div className={styles.header}>
       <h1 className={styles.title}>Monti.</h1>
       <ul className={styles.menu}>
-        <li>Beneficios</li>
-        <li>Como funciona?</li>
-        <li>FAQ</li>
+        <li className={styles.menuItem}>Beneficios</li>
+        <li className={styles.menuItem}>Como funciona?</li>
+        <li className={styles.menuItem}>FAQ</li>
         <div className={styles.registrate}>
           <li className={styles.regGratis}>Registrate gratis</li>
         </div>
