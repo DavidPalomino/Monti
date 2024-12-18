@@ -8,20 +8,24 @@ import { QA } from "./layouts/QA/QA"
 import { Experiences } from "./layouts/Experiences/Experiences"
 import { GroupExpensesHero } from "./layouts/GroupExpensesHero/GroupExpensesHero"
 import { Footer } from "./components/Footer/Footer"
-
+import { useState } from "react"
 function App() {
-
+  const [viewportWidth, setViewportWidth] = useState(document.documentElement.clientWidth);
+  
+  window.addEventListener("resize", () => {
+    setViewportWidth(document.documentElement.clientWidth);
+  });
   return (
     <section className="App__container">
-      <Header className="header"/>
-      <Overview className="overview"/>
-      <BenefitsSection className="benefits-section"/>
-      <SharedExpenseSteps className="shared-expense-steps"/>
-      <HeroSection className="hero-section"/>
-      <QA className="qa"/>
-      <Experiences className="experiences"/>
-      <GroupExpensesHero className="group-expenses-hero"/>
-      <Footer className="footer"/>
+      <Header className="header" viewportWidth={viewportWidth} />
+      <Overview className="overview" viewportWidth={viewportWidth} />
+      <BenefitsSection className="benefits-section" viewportWidth={viewportWidth} />
+      <SharedExpenseSteps className="shared-expense-steps" viewportWidth={viewportWidth} />
+      <HeroSection className="hero-section" viewportWidth={viewportWidth} />
+      <QA className="qa" viewportWidth={viewportWidth} />
+      <Experiences className="experiences" viewportWidth={viewportWidth} />
+      <GroupExpensesHero className="group-expenses-hero" viewportWidth={viewportWidth} />
+      <Footer className="footer" viewportWidth={viewportWidth} />
     </section>
   )
 }
