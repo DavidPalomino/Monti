@@ -6,6 +6,10 @@
     padding-top: 5rem;
 }
 
+.qaList{
+    padding: 1rem;
+}
+
 .qaContent {
     display: flex;
     flex-direction: column;
@@ -40,7 +44,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 18rem;
+    
     padding-top: 1.5rem;
 }
 
@@ -83,4 +87,15 @@
     opacity: 1;
     padding-bottom: 1rem;
 
+}
+
+@media (max-width: 768px) {
+
+    .qaTitle span {
+        text-align: center;
+        display: block;
+    }
+    .qaQuestion span {
+        display: block;
+    }
 }

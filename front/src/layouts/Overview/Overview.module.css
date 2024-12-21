@@ -1,46 +1,64 @@
 .overview {
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  justify-content: space-around;
-  height: 100%;
-  gap: 10rem;
-  padding: 0 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .overviewText {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
+    width: 50%;
+    margin-left: 2rem;
 }
 
-.overviewTitle {
-  font-size: 4.5rem;
+.overviewTitle{
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 
-.montiP , .overviewP {
-  font-size: 16px;
-  font-weight: 400;
+.overviewP {
+    font-size: 1.1rem;
+    font-weight: 100;
 }
 
 .montiP {
-    font-weight: bold;
     color: #004BE6;
+    font-weight: 450;
 }
+
+.overviewImgContainer {
+    margin-right: 2rem;
+    width: 40%;
+    height: auto;
+}
+
+.overviewImg {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
 
 .iconsContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+}
+
+.descargaButton {
+    background-color: #004BE6;
+    color: white;
+    border-radius: 30px;
+    padding: 1rem 1.5rem;
+    border: none;
+    font-size: 0.8rem;
 }
 
 .icons {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 0;
-    padding: 0px 0px 0px 18px;
+    padding: 0px 4px 0px 18px;
 }
 
 .icon {
@@ -55,17 +73,60 @@
 }
 
 .iconsText {
-  font-size: 15px;
-  color: #B0B0B0;
-  margin-left: 10px;
-  text-align: left;
+    color: #B0B0B0;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
-.descargaButton {
-  background-color: #004BE6;
-  color: #ffffff;
-  padding: 18px 24px;
-  border-radius: 40px;
-  font-size: 12px;
-  border: none;
+.iContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .overview {
+        flex-direction: column;
+    }
+
+    .overviewText {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .overviewTitle {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .overviewP {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .iconsContainer{
+        flex-direction: column;
+    }
+
+    .icons {
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+    }   
+
+    .iconsText {
+        margin-top: 0.5rem;
+    }
+
+    .overviewPspan {
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    .overviewImgContainer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-right: 0;
+    }
 }

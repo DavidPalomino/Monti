@@ -8,7 +8,7 @@ export const SharedExpenseSteps = () => {
       <div className={styles.content}>
         <div className={styles.steps}>
           <div className={styles.stepsList}>
-            <ul>
+            <ul className={styles.stepsListItems}>
               <li className={styles.stepsItem}>
                 <div className={styles.stepsItemIcon}> <p className={styles.stepsItemIconNumber}>01</p> </div>
                 <div className={styles.stepsItemContent}>
@@ -33,8 +33,8 @@ export const SharedExpenseSteps = () => {
             </ul>
           </div>
         </div>
-        <div>
-          <img src={SharedExpenseStepsImage} alt="salmon" />
+        <div className={styles.stepsImageContainer}>
+          <img src={SharedExpenseStepsImage} alt="salmon" className={styles.stepsImage} />
         </div>
       </div>    
     </div>

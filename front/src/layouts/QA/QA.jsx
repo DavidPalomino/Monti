@@ -13,13 +13,13 @@ export const QA = () => {
 
   return (
     <div className={styles.qaContainer}>
-      <h1 className={styles.qaTitle}>Respuestas a tus preguntas</h1>
+      <h1 className={styles.qaTitle}>Respuestas a tus <span>preguntas</span></h1>
       <div className={styles.qaContent}>
         <ul className={styles.qaList}>
           <li className={styles.qaItem}>
             <div className={styles.qaQuestionContainer}>
               <h1 className={styles.qaQuestion}>
-                ¿Cómo funciona Monti para dividir los gastos?
+                ¿Cómo funciona Monti para dividir <span>los gastos?</span>
               </h1>
               <div
                 className={styles.qaArrowContainer}
@@ -51,7 +51,7 @@ export const QA = () => {
           <li className={styles.qaItem}>
             <div className={styles.qaQuestionContainer}>
               <h1 className={styles.qaQuestion}>
-                ¿Es seguro usar Monti para gestionar mis finanzas?
+                ¿Es seguro usar Monti para <span>gestionar mis finanzas?</span>
               </h1>
               <div
                 className={styles.qaArrowContainer}
@@ -103,7 +103,7 @@ export const QA = () => {
           <li className={styles.qaItem}>
             <div className={styles.qaQuestionContainer}>
               <h1 className={styles.qaQuestion}>
-                ¿Cómo puedo resolver un problema o contactar soporte?
+                ¿Cómo puedo resolver un <span>problema o contactar soporte?</span>
               </h1>
               <div
                 className={styles.qaArrowContainer}

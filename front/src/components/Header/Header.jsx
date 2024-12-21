@@ -10,7 +10,7 @@ export const Header = ({ viewportWidth }) => {
     <div className={styles.header}>
       <h1 className={styles.title}>Monti.</h1>
       
-      {viewportWidth < 500 ? (
+      {viewportWidth < 728 ? (
         <>
           <button 
             className={styles.hamburger}

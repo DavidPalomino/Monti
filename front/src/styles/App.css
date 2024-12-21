@@ -5,14 +5,3 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.App__container {
-  display: grid;
-  grid-template-columns: 1fr;  
-} 
-
-@media (max-width: 500px) {
-  .App__container {
-    display: block;
-  }
-}

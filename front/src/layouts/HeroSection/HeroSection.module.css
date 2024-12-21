@@ -1,55 +1,75 @@
-.heroSection {
-    position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.heroSectionImage{
+    max-width: 100%;
+    margin: 0 2rem;
+    height: 740px;
+    overflow: hidden;
+    background-image: url('../../../assets/HeroImage.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
 }
 
-.heroSectionImage {
-  width: 98%;
-  height: 90%;
-  object-fit: cover;
-  border-radius: 30px;
+.heroSectionContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    background-color: #0003;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    width: 35%;
+    margin: 2rem 2rem;
+    padding: 1rem;
+    border-radius:2rem;
 }
 
-.heroSectionContent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: absolute;
-  bottom: 9%;
-  left: 3%;
-  transform: none;
-  text-align: left;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(8px);
-  border-radius: 30px;   
-  width: 94%;
-  max-width: 400px; 
-  gap: clamp(0.5rem, 2vw, 1rem); 
-  padding: clamp(1rem, 2vw, 1.5rem) clamp(0.1rem, 2vw, 1.5rem) clamp(1rem, 2vw, 1.5rem) clamp(0.5rem, 2vw, 1rem); 
+.heroSectionTitle{
+    font-size: 2rem;
+    font-weight: 500;
+    padding:0 0.5rem;
+    margin: 0.2rem 0;
 }
 
-.heroSectionTitle {
-  font-size: clamp(1.2rem, 3vw, 1.5rem); 
-  padding-left: 0; 
-  margin: 0;
+.heroSectionDescription{
+    font-size: 1rem;
+    font-weight: 100;
+    padding:0 0.5rem;
 }
 
-.heroSectionDescription {
-  font-size: clamp(0.5rem, 1.5vw, 0.9rem);
-  font-weight: 150;
-  padding-left: 0; 
+.heroSectionButton{
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    margin: 1rem 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
-.heroSectionButton {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  border-radius: 30px;
-  padding: clamp(10px, 1.5vw, 15px) clamp(15px, 2vw, 20px);
-  border: none;
-  margin: 0; 
-  font-size: clamp(0.8rem, 1.5vw, 1rem);
+@media (max-width: 768px) {
+    .heroSectionImage{
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .heroSectionContent{
+        width: 70%;
+        margin: 2rem 0;
+    }
+
+    .heroSectionTitle{
+        font-size: 1.3rem;
+    }
+
+    .heroSectionDescription{
+        font-size: 0.8rem;
+    }
 }
