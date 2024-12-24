@@ -30,6 +30,10 @@
     color: #0059FF;
 }
 
+.experiences__buttons__mobile{
+    display: none;
+}
+
 .experiences__buttons {
     display: flex;
     flex-direction: row;
@@ -87,13 +91,25 @@
 
 @media (max-width: 768px) {
 
+        
     .experiences__buttons{
         display: none;
     }
+
+    .experiences__buttons__mobile{
+        display: inline;
+        margin-right: 70%;
+    }
+
+    .experiences__button{
+        margin: 0 0.5rem;
+    }
+
     .experiences__title{
         padding-left: 1rem;
     }
 
+  
     .experiences__title__span br {
         display: contents;
     }

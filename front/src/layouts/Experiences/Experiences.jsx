@@ -26,6 +26,10 @@ export const Experiences = () => {
                     <h1 className={styles.experiences__item__name}>Ana</h1>
                 </li>
             </ul>
+            <div className={styles.experiences__buttons__mobile}>
+                    <button className={styles.experiences__button}><img className={styles.experiences__button__arrow__left} src={arrow} alt="arrow left" /></button>
+                    <button className={styles.experiences__button}><img className={styles.experiences__button__arrow__right} src={arrow} alt="arrow right" /></button>
+                </div>
         </div>
     </div>
   )
