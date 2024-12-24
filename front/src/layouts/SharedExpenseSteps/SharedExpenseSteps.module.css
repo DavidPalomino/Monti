@@ -26,10 +26,9 @@ padding-left: 0;
 }
 
 .stepsItemIcon {
-  width: 40px;
-  height: 40px;
+  padding: 0.9rem 1rem;
   background-color: #0074FF;
-  border-radius: 50%;
+  border-radius: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,7 +37,8 @@ padding-left: 0;
 }
 
 .stepsItemIconNumber {
-  font-size: 15px;
+  font-size: 1rem;
+  margin: 0;
   font-weight: 400;
   color: #fff;
 }   
@@ -74,8 +74,15 @@ padding-left: 0;
   color: #201515;
 }
 
+.stepsItemDescription span{
+  display: block;
+}
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
+  }
+
+  .stepsItemDescription span{
+    display: inline;
   }
 }

@@ -81,6 +81,10 @@
     max-height: 0;
     opacity: 0;
   }
+
+  .qaAnswer span {
+    display: block;
+  }
   
   .qaAnswer.open {
     max-height: 200px;
@@ -97,5 +101,9 @@
     }
     .qaQuestion span {
         display: block;
+    }
+
+    .qaAnswer span {
+        display: inline;
     }
 }

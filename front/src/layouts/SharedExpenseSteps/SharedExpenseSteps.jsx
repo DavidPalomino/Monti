@@ -13,21 +13,21 @@ export const SharedExpenseSteps = () => {
                 <div className={styles.stepsItemIcon}> <p className={styles.stepsItemIconNumber}>01</p> </div>
                 <div className={styles.stepsItemContent}>
                   <h2 className={styles.stepsItemTitle}>Crea tu Grupo</h2>
-                  <p className={styles.stepsItemDescription}>Forma un grupo para cada actividad que <br /> realices con tus amigos. Ya sea un viaje, <br /> una cena o cualquier evento.</p>
+                  <p className={styles.stepsItemDescription}>Forma un grupo para cada actividad que <span> realices con tus amigos. Ya sea un viaje, </span> una cena o cualquier evento.</p>
                 </div>
               </li>
               <li className={styles.stepsItem}>
                 <div className={styles.stepsItemIcon}> <p className={styles.stepsItemIconNumber}>02</p> </div>
                 <div className={styles.stepsItemContent}>
                   <h2 className={styles.stepsItemTitle}>Añade Gastos</h2>
-                  <p className={styles.stepsItemDescription}>Añade los gastos de cada amigo en el <br /> grupo. Usa la cámara para escanear los <br /> recibos fácilmente.</p>
+                  <p className={styles.stepsItemDescription}>Añade los gastos de cada amigo en el <span> grupo. Usa la cámara para escanear los </span> recibos fácilmente.</p>
                 </div>
               </li> 
               <li className={styles.stepsItem}>
                 <div className={styles.stepsItemIcon}> <p className={styles.stepsItemIconNumber}>03</p> </div>
                 <div className={styles.stepsItemContent}>
                   <h2 className={styles.stepsItemTitle}>Balance Automatico</h2>
-                  <p className={styles.stepsItemDescription}>La app calcula automáticamente el <br/>balance y notifica a tus amigos sobre <br/>cuánto deben pagar cada uno.</p>
+                  <p className={styles.stepsItemDescription}>La app calcula automáticamente el <span>balance y notifica a tus amigos sobre </span>cuánto deben pagar cada uno.</p>
                 </div>
               </li>     
             </ul>

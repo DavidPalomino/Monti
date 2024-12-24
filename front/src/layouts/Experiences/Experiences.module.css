@@ -47,6 +47,7 @@
     background-color: transparent;
     border: 1px solid #000;
     border-radius: 50%;
+    cursor: pointer;
     width: 40px;
     height: 40px;
 }
@@ -99,7 +100,8 @@
 
     .experiences__buttons__mobile{
         display: inline;
-        margin-right: 70%;
+        align-self: flex-start;
+        margin-left: 1rem;
     }
 
     .experiences__button{
@@ -131,12 +133,12 @@
     }
 
     .experiences__item__name {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         padding: 0 15rem 0 0.5rem;
     }
 
     .experiences__item__text span {
-        display: none;
+        display: inline;
     }
     .experiences__item__text {
         font-size: 0.9rem;

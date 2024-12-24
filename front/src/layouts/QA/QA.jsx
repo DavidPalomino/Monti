@@ -47,10 +47,10 @@ export const QA = () => {
               }`}
             >
               Monti permite que crees grupos para cada actividad o evento.
-              Simplemente agrega los gastos de <br />
+              Simplemente agrega los gastos de <span>
               cada miembro del grupo y Monti se encargará de dividirlos de
-              manera justa y precisa. Todos los
-              <br /> miembros podrán ver su balance y recibirán notificaciones
+              manera justa y precisa. Todos los </span>
+              <span> miembros podrán ver su balance y recibirán notificaciones</span>
               sobre lo que deben pagar.
             </p>
           </li>
