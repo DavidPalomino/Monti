@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
 
 body {
+
   font-family: 'Readex Pro', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 2560px) {
+  .App__container {
+    margin: 0 25%;
+  }
 }

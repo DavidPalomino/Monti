@@ -41,8 +41,13 @@
 @media (max-width: 768px) {
     .benefitsCards {
         overflow-x: scroll;
+        scrollbar-width: none;
         justify-content: flex-start;
         gap: 1rem;
+    }
+    
+    .benefitsCards__card{
+        margin-left: 1rem;
     }
 
     .benefitsCards__card__title{

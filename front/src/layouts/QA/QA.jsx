@@ -13,12 +13,14 @@ export const QA = () => {
 
   return (
     <div className={styles.qaContainer}>
-      <h1 className={styles.qaTitle}>Respuestas a tus <span>preguntas</span></h1>
+      <h1 className={styles.qaTitle}>
+        Respuestas a tus <span>preguntas</span>
+      </h1>
       <div className={styles.qaContent}>
         <ul className={styles.qaList}>
           <li className={styles.qaItem}>
             <div className={styles.qaQuestionContainer}>
-              <h1 className={styles.qaQuestion}>
+              <h1 className={styles.qaQuestion} onClick={() => toggleItem(0)}>
                 ¿Cómo funciona Monti para dividir <span>los gastos?</span>
               </h1>
               <div
@@ -39,7 +41,11 @@ export const QA = () => {
                 />
               </div>
             </div>
-            <p className={`${styles.qaAnswer} ${openItems[0] ? styles.open : ""}`}>
+            <p
+              className={`${styles.qaAnswer} ${
+                openItems[0] ? styles.open : ""
+              }`}
+            >
               Monti permite que crees grupos para cada actividad o evento.
               Simplemente agrega los gastos de <br />
               cada miembro del grupo y Monti se encargará de dividirlos de
@@ -49,7 +55,10 @@ export const QA = () => {
             </p>
           </li>
           <li className={styles.qaItem}>
-            <div className={styles.qaQuestionContainer}>
+            <div
+              className={styles.qaQuestionContainer}
+              onClick={() => toggleItem(1)}
+            >
               <h1 className={styles.qaQuestion}>
                 ¿Es seguro usar Monti para <span>gestionar mis finanzas?</span>
               </h1>
@@ -71,12 +80,19 @@ export const QA = () => {
                 />
               </div>
             </div>
-            <p className={`${styles.qaAnswer} ${openItems[1] ? styles.open : ""}`}>
+            <p
+              className={`${styles.qaAnswer} ${
+                openItems[1] ? styles.open : ""
+              }`}
+            >
               Segunda pregunta
             </p>
           </li>
           <li className={styles.qaItem}>
-            <div className={styles.qaQuestionContainer}>
+            <div
+              className={styles.qaQuestionContainer}
+              onClick={() => toggleItem(2)}
+            >
               <h1 className={styles.qaQuestion}>¿Monti es gratis?</h1>
               <div
                 className={styles.qaArrowContainer}
@@ -96,14 +112,22 @@ export const QA = () => {
                 />
               </div>
             </div>
-            <p className={`${styles.qaAnswer} ${openItems[2] ? styles.open : ""}`}>
+            <p
+              className={`${styles.qaAnswer} ${
+                openItems[2] ? styles.open : ""
+              }`}
+            >
               Tercera pregunta
             </p>
           </li>
           <li className={styles.qaItem}>
-            <div className={styles.qaQuestionContainer}>
+            <div
+              className={styles.qaQuestionContainer}
+              onClick={() => toggleItem(3)}
+            >
               <h1 className={styles.qaQuestion}>
-                ¿Cómo puedo resolver un <span>problema o contactar soporte?</span>
+                ¿Cómo puedo resolver un{" "}
+                <span>problema o contactar soporte?</span>
               </h1>
               <div
                 className={styles.qaArrowContainer}
@@ -123,7 +147,11 @@ export const QA = () => {
                 />
               </div>
             </div>
-            <p className={`${styles.qaAnswer} ${openItems[3] ? styles.open : ""}`}>
+            <p
+              className={`${styles.qaAnswer} ${
+                openItems[3] ? styles.open : ""
+              }`}
+            >
               Cuarta pregunta
             </p>
           </li>
