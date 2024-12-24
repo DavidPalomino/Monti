@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 3rem 0
 }
 
 .overviewText {
@@ -87,6 +88,8 @@
 @media (max-width: 768px) {
     .overview {
         flex-direction: column;
+        margin: 2rem 0
+
     }
 
     .overviewText {
@@ -124,6 +127,7 @@
     }
 
     .overviewImgContainer {
+        margin-top: 2rem;
         display: flex;
         justify-content: center;
         width: 100%;

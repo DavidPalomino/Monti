@@ -26,7 +26,7 @@ function App() {
       <QA className="qa" viewportWidth={viewportWidth} />
       <Experiences className="experiences" viewportWidth={viewportWidth} />
       <GroupExpensesHero className="group-expenses-hero" viewportWidth={viewportWidth} />
-      {/* <Footer className="footer" viewportWidth={viewportWidth} /> */}
+      <Footer className="footer" viewportWidth={viewportWidth} />
     </section>
   )
 }
