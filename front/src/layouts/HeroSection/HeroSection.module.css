@@ -49,6 +49,7 @@
     margin: 1rem 0.5rem;
     font-size: 0.9rem;
     font-weight: 500;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
