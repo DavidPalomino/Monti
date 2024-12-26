@@ -1,5 +1,4 @@
 import styles from './HeroSection.module.css'
-import HeroSectionImage from '../../../assets/HeroImage.jpeg'
 
 export const HeroSection = () => {
   return (

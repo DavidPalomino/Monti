@@ -1,8 +1,8 @@
 import styles from "./QA.module.css";
 import arrow from "../../../assets/Arrow.svg";
-import { useState } from "react";
+import { useState ,forwardRef} from "react";
 
-export const QA = () => {
+export const QA =  forwardRef((props, ref)  => {
   const [openItems, setOpenItems] = useState(new Array(4).fill(false));
 
   const toggleItem = (index) => {
@@ -12,7 +12,7 @@ export const QA = () => {
   };
 
   return (
-    <div className={styles.qaContainer}>
+    <div className={styles.qaContainer} ref={ref}>
       <h1 className={styles.qaTitle}>
         Respuestas a tus <span>preguntas</span>
       </h1>
@@ -159,4 +159,4 @@ export const QA = () => {
       </div>
     </div>
   );
-};
+});

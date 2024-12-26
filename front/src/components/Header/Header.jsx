@@ -2,9 +2,8 @@ import React from "react";
 import styles from "./Header.module.css";
 import { useState } from "react";
 
-export const Header = ({ viewportWidth }) => {
+export const Header = ({ viewportWidth, onScroll }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
 
   return (
     <div className={styles.header}>
@@ -26,21 +25,23 @@ export const Header = ({ viewportWidth }) => {
           
           {isMenuOpen && (
             <div className={styles.sideBar}>
-              <button className={styles.closeButton} onClick={() => setIsMenuOpen(!isMenuOpen)}>X</button>
+              <div className={styles.closeButton} onClick={() => setIsMenuOpen(!isMenuOpen)}/>
             <ul className={`${styles.menu} ${styles.mobileMenu}`}>
-              <li className={styles.menuItem}>Beneficios</li>
-              <li className={styles.menuItem}>Como funciona?</li>
-              <li className={styles.menuItem}>FAQ</li>
-              <button className={styles.registrate}>Registrate gratis</button>
+            <a className={styles.menuItem} onClick={() => {setIsMenuOpen(!isMenuOpen) ,onScroll("benefits")}}>Beneficios</a>
+            <div className={styles.separationBar}/>
+            <a className={styles.menuItem} onClick={() => {setIsMenuOpen(!isMenuOpen),onScroll("HowWorks")}}>Como funciona?</a>
+            <div className={styles.separationBar}/>
+            <a className={styles.menuItem} onClick={() => {setIsMenuOpen(!isMenuOpen),onScroll("FAQ")}}>FAQ</a>
+            <button className={styles.registrate}>Registrate gratis</button>
             </ul>
             </div>
           )}
         </>
       ) : (
         <ul className={styles.menu}>
-          <li className={styles.menuItem}>Beneficios</li>
-          <li className={styles.menuItem}>Como funciona?</li>
-          <li className={styles.menuItem}>FAQ</li>
+          <a className={styles.menuItem} onClick={() => onScroll("benefits")}>Beneficios</a>
+          <a className={styles.menuItem} onClick={() => onScroll("HowWorks")}>Como funciona?</a>
+          <a className={styles.menuItem} onClick={() => onScroll("FAQ")}>FAQ</a>
           <button className={styles.registrate}>Registrate gratis</button>
         </ul>
       )}

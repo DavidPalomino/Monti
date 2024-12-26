@@ -1,9 +1,10 @@
 import styles from './SharedExpenseSteps.module.css';
 import SharedExpenseStepsImage from '../../../assets/PhoneImg.svg';
+import { forwardRef } from "react";
 
-export const SharedExpenseSteps = () => {
+export const SharedExpenseSteps =  forwardRef((props, ref)  => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} ref={ref}>
       <h1 className={styles.title}> Tus gastos compartidos de manera <br/> simple y sin interés</h1>
       <div className={styles.content}>
         <div className={styles.steps}>
@@ -39,4 +40,4 @@ export const SharedExpenseSteps = () => {
       </div>    
     </div>
   );
-};
+});
