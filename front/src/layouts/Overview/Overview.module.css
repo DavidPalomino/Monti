@@ -1,7 +1,7 @@
 .overview {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 1rem 0
 }
@@ -13,23 +13,24 @@
 
 .overviewTitle{
     font-size: 4rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
 .overviewP {
-    font-size: 1.1rem;
-    font-weight: 100;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgba(79, 79, 79, 1);
 }
 
 .montiP {
     color: #004BE6;
-    font-weight: 450;
+    font-weight: 500;
 }
 
 .overviewImgContainer {
     margin-right: 2rem;
-    width: 40%;
+    width: 38%;
     height: auto;
 }
 
@@ -50,10 +51,12 @@
     background-color: #004BE6;
     color: white;
     border-radius: 30px;
-    padding: 1rem 1.5rem;
+    padding: 1.2rem 2.1rem;
     border: none;
     cursor: pointer;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Readex Pro', sans-serif;
 }
 
 .icons {
@@ -75,9 +78,9 @@
 }
 
 .iconsText {
-    color: #B0B0B0;
-    font-size: 1rem;
-    font-weight: 300;
+    color: rgba(176, 176, 176, 1);
+    font-size: 1.2rem;
+    font-weight: 350;
 }
 
 .iContainer {

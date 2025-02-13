@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Header.module.css";
 import { useState } from "react";
+import MontiIcon from "../../../assets/MontiIcon.svg"
 
 export const Header = ({ viewportWidth, onScroll }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,7 +9,7 @@ export const Header = ({ viewportWidth, onScroll }) => {
   return (
     <div className={styles.header}>
       {!isMenuOpen && (
-      <h1 className={styles.title}>Monti.</h1>
+      <img src={MontiIcon} className={styles.montiIcon}></img>
     )}
       {viewportWidth < 728 ? (
         <>
@@ -29,7 +30,7 @@ export const Header = ({ viewportWidth, onScroll }) => {
             <ul className={`${styles.menu} ${styles.mobileMenu}`}>
             <a className={styles.menuItem} onClick={() => {setIsMenuOpen(!isMenuOpen) ,onScroll("benefits")}}>Beneficios</a>
             <div className={styles.separationBar}/>
-            <a className={styles.menuItem} onClick={() => {setIsMenuOpen(!isMenuOpen),onScroll("HowWorks")}}>Como funciona?</a>
+            <a className={styles.menuItem} onClick={() => {setIsMenuOpen(!isMenuOpen),onScroll("HowWorks")}}>¿Cómo funciona?</a>
             <div className={styles.separationBar}/>
             <a className={styles.menuItem} onClick={() => {setIsMenuOpen(!isMenuOpen),onScroll("FAQ")}}>FAQ</a>
             <button className={styles.registrate}>Registrate gratis</button>
@@ -40,7 +41,7 @@ export const Header = ({ viewportWidth, onScroll }) => {
       ) : (
         <ul className={styles.menu}>
           <a className={styles.menuItem} onClick={() => onScroll("benefits")}>Beneficios</a>
-          <a className={styles.menuItem} onClick={() => onScroll("HowWorks")}>Como funciona?</a>
+          <a className={styles.menuItem} onClick={() => onScroll("HowWorks")}>¿Cómo funciona?</a>
           <a className={styles.menuItem} onClick={() => onScroll("FAQ")}>FAQ</a>
           <button className={styles.registrate}>Registrate gratis</button>
         </ul>
